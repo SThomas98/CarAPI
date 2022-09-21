@@ -10,8 +10,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.JsonNode;
 
 public class carsApi {
-    private static final String APIKEY  = ""; //Add own APIKey to access
-    private static final String APIHOST = ""; //Add API Host to access
+    private static final String APIKEY = "54c1e13bdfmshb178ba48832f1b2p148fbfjsn9343ed617a60";
+    private static final String APIHOST = "car-data.p.rapidapi.com";
 
     public String getRandomCar() throws IOException {
 
