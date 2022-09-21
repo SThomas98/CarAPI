@@ -6,8 +6,8 @@ const AXIOS = axios.create({
 
 export default {
 
-	// Get featured items for home slider.
+	// Get car model.
     getCars() {
-        return AXIOS.get('/cars')
+        return AXIOS.get('/car')
     },
 }

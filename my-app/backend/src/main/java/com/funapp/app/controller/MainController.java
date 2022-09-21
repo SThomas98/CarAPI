@@ -19,4 +19,12 @@ public class MainController {
 
         return "index";
     }
+
+    @GetMapping("/car")
+    public String cars(Model model) throws IOException {
+        carsApi temp = new carsApi();
+        model.addAttribute("cars", temp.getRandomCar());
+
+        return temp.getRandomCar();
+    }
 }
