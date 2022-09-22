@@ -1,6 +1,22 @@
 <template>
    <v-app id="background">
-      <v-btn elevation="2" width="100px" @click="getCar">Click</v-btn>
+      <v-card class="mx-auto my-12" max-width="400" width="500">
+         <div class="my-4">Click to see a car and the model of the car given.</div>
+         <v-divider class="mx-5"></v-divider>
+
+         <v-btn elevation="2" @click="getCar" class="my-4">Load Car</v-btn>
+
+         <template slot="progress">
+
+         </template>
+
+         <v-img
+         height="250"
+         :src="this.cars.img"
+         ></v-img>
+
+         <v-card-title class="justify-center">{{this.cars.model}}</v-card-title>
+      </v-card>
    </v-app>
 </template>
 
@@ -12,9 +28,9 @@ export default {
    data() {
       return {
          cars: {
-            model: null
-         },
-
+            model: '',
+            img: ''
+         }
       }
    },
 
